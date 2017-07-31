@@ -2,14 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { HttpModule } from '@angular/http';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ChecklistListPage } from '../pages/checklists/checklist-list/checklist-list';
 import { Checklist1Page } from '../pages/checklists/checklist1/checklist1';
 import { Checklist2Page } from '../pages/checklists/checklist2/checklist2';
-import { KnowledgeBaseListPage } from '../pages/knowledge-base/knowledge-base-list/knowledge-base-list';
-import { LoginPage } from '../pages/login/login';
 import { MediaBuyingChecklistPage } from '../pages/checklists/mediaBuying/mediaBuying';
+
+import { KnowledgeBaseListPage } from '../pages/knowledge-base/knowledge-base-list/knowledge-base-list';
+import { PostDetail } from '../pages/knowledge-base/post-detail/post-detail';
+
+import { LoginPage } from '../pages/login/login';
 
 import { Facebook } from '@ionic-native/facebook';
 import firebase from 'firebase';
@@ -42,11 +46,13 @@ const cloudSettings: CloudSettings = {
     Checklist1Page,
     Checklist2Page,
     KnowledgeBaseListPage,
+    PostDetail,
     LoginPage,
     MediaBuyingChecklistPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
     CloudModule.forRoot(cloudSettings)
   ],
@@ -58,6 +64,7 @@ const cloudSettings: CloudSettings = {
     Checklist1Page,
     Checklist2Page,
     KnowledgeBaseListPage,
+    PostDetail,
     LoginPage,
     MediaBuyingChecklistPage
   ],
