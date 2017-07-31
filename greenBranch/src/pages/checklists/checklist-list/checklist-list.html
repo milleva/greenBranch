@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>All Checklists</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <button ion-item (click)="goToMediaBuyingChecklist()">
+      <div class="title">
+      Media Buying / Campaign Briefing
+      </div>
+      <div class="item-note" item-right>
+        go to checklist
+      </div>
+    </button>
+    <button ion-item (click)="goToChecklist1()">
+      <div class="title">
+      Checklist 1
+      </div>
+      <div class="item-note" item-right>
+        go to checklist
+      </div>
+    </button>
+
+    <button ion-item (click)="goToChecklist2()">
+      <div class="title">
+      Checklist 2
+      </div>
+      <div class="item-note" item-right>
+        go to checklist
+      </div>
+    </button>
+
+  </ion-list>
+</ion-content>
+

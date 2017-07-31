@@ -1,0 +1,74 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Checklist 2 Title</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <form>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+
+    <p>
+      radio buttons
+    </p>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+    <br><br>
+
+    <p>
+      list select
+    </p>
+    <select>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi" selected>Audi</option>
+    </select>
+    <br><br>
+
+    <p>Text area</p>
+    <textarea name="message" rows="10" cols="30">This is a larger text area messages or feedback.
+    </textarea>
+
+    <p>Input box with predefined options to pick from</p>
+    <input list="browsers">
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+    <br><br>
+
+    <input type="checkbox" name="vehicle" value="Bike">checkbox1<br>
+    <input type="checkbox" name="vehicle" value="Car">checkbox2<br>
+    <input type="checkbox" name="vehicle" value="Bike">checkbox3<br>
+    <input type="checkbox" name="vehicle" value="Car">checkbox4
+    <br><br>
+
+
+    <p>
+      A slider input<br>
+      <input id="slider1" type="range" min="0" max="100" step="1" [(ngModel)]="myModel"name="model" (change)="updateSliderInput($event)"/>
+      <output id="output"></output>
+    </p>
+
+  </form>
+
+  <p>
+    <button ion-button color="primary">Submit</button>
+  </p>
+
+
+
+</ion-content>
