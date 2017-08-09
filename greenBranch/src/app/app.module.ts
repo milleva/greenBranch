@@ -4,6 +4,8 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
 
+
+
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ChecklistListPage } from '../pages/checklists/checklist-list/checklist-list';
 import { Checklist1Page } from '../pages/checklists/checklist1/checklist1';
@@ -15,6 +17,7 @@ import { PostDetail } from '../pages/knowledge-base/post-detail/post-detail';
 
 import { LoginPage } from '../pages/login/login';
 
+//login modules
 import { Facebook } from '@ionic-native/facebook';
 import firebase from 'firebase';
 

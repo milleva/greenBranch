@@ -16,7 +16,7 @@ export class LoginPage{
   }
 
   loginFacebook(){
-    /*if (this.platform.is('cordova')) {
+    if (this.platform.is('cordova')) {
       this.facebook.login(["email"]).then((loginResponse)=>{
 
         let credential = firebase.auth.FacebookAuthProvider.credential(loginResponse.authResponse.accessToken);
@@ -26,9 +26,9 @@ export class LoginPage{
       })
     }else{
       alert('not native so no can do sugarcube');
-    }*/
+    }
 
-    let provider = new firebase.auth.FacebookAuthProvider();
+    /*let provider = new firebase.auth.FacebookAuthProvider();
 
     firebase.auth().signInWithRedirect(provider).then(()=>{
       firebase.auth().getRedirectResult().then((result)=>{
@@ -36,7 +36,7 @@ export class LoginPage{
       }).catch(function(error){
         alert(JSON.stringify(error))
       });
-    })
+    })*/
 
 
   }
