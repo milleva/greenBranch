@@ -4,7 +4,7 @@ import firebase from 'firebase';
 import { Facebook } from '@ionic-native/facebook';
 import { Platform } from 'ionic-angular';
 import { HelloIonicPage } from '../hello-ionic/hello-ionic';
-
+import {User} from '../../models/user';
 
 @Component({
   selector: 'page-login',
@@ -12,6 +12,7 @@ import { HelloIonicPage } from '../hello-ionic/hello-ionic';
 })
 
 export class LoginPage{
+  database = firebase.database();
   account = {
     email: 'emiller@gmail.com',
     password: 'tits'
@@ -36,17 +37,35 @@ export class LoginPage{
         // ...
     });
 
+    var title = this.user.title;//from form
+    var company = this.user.company;
+    var uid;
+
+    firebase.auth().onAuthStateChanged(function(user){
+      if(user) {
+        uid = user.uid;
+        var dbUserInstance = new User(uid, title, company);
+        dbUserInstance.save();
+      }
+    });
+
 
   }
 
   loginNative(){
-    alert(this.account.email + ' ' + this.account.password);
+    firebase.auth().signInWithEmailAndPassword(this.account.email, this.account.password).catch(function(error){
+      var errorMessage = error.message;
+      alert(errorMessage);
+    });
+    var user = firebase.auth().currentUser;
+    if(user != null){
+      alert(user.displayName);
+    }
   }
 
   loginFacebook(){
     if (this.platform.is('cordova')) {
       this.facebook.login(["email"]).then((loginResponse)=>{
-
         let credential = firebase.auth.FacebookAuthProvider.credential(loginResponse.authResponse.accessToken);
         firebase.auth().signInWithCredential(credential).then((info) => {
           alert(JSON.stringify(info));

@@ -33,16 +33,23 @@ export class HelloIonicPage {
     this.NavCtrl.push(LoginPage);
   }
 
+  doLogout(){
+    firebase.auth().signOut().then(function(){
+      alert('Logged out');
+    }, function(error){
+      alert(error.message);
+    })
+  }
+
   testDB(){
-    let testUser: User = new User(2, 'Janos', 'Manager', 'greenbranch studios', null,
-                                  'email.com', 'somepassword');
+    let testUser: User = new User(2, 'Manager', 'greenbranch studios');
     testUser.save();
   }
 
   testUserProfile(){
-    let testUser: User = new User(2, 'Janos', 'Manager', 'greenbranch studios', null,
+    /*let testUser: User = new User(2, 'Janos', 'Manager', 'greenbranch studios', null,
                                   'email.com', 'somepassword');
-    this.NavCtrl.push(UserProfilePage, { testUser });
+    this.NavCtrl.push(UserProfilePage, { testUser });*/
   }
 }
 
