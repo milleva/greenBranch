@@ -11,6 +11,7 @@ import { ChecklistListPage } from '../pages/checklists/checklist-list/checklist-
 import { Checklist1Page } from '../pages/checklists/checklist1/checklist1';
 import { Checklist2Page } from '../pages/checklists/checklist2/checklist2';
 import { MediaBuyingChecklistPage } from '../pages/checklists/mediaBuying/mediaBuying';
+import { UserProfilePage } from '../pages/user-profile/user-profile'
 
 import { KnowledgeBaseListPage } from '../pages/knowledge-base/knowledge-base-list/knowledge-base-list';
 import { PostDetail } from '../pages/knowledge-base/post-detail/post-detail';
@@ -51,7 +52,8 @@ const cloudSettings: CloudSettings = {
     KnowledgeBaseListPage,
     PostDetail,
     LoginPage,
-    MediaBuyingChecklistPage
+    MediaBuyingChecklistPage,
+    UserProfilePage
   ],
   imports: [
     BrowserModule,
@@ -69,7 +71,8 @@ const cloudSettings: CloudSettings = {
     KnowledgeBaseListPage,
     PostDetail,
     LoginPage,
-    MediaBuyingChecklistPage
+    MediaBuyingChecklistPage,
+    UserProfilePage
   ],
   providers: [
     StatusBar,

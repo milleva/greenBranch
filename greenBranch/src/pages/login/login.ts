@@ -12,7 +12,35 @@ import { HelloIonicPage } from '../hello-ionic/hello-ionic';
 })
 
 export class LoginPage{
+  account = {
+    email: 'emiller@gmail.com',
+    password: 'tits'
+  };
+  user = {
+    name: '',
+    email: 'signup@gmail.com',
+    company: '',
+    title: '',
+    password: '',
+    password_again: ''
+  };
+
   constructor(public navCtrl: NavController, private facebook: Facebook, public platform: Platform){
+  }
+
+  signupNative(){
+    firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password).catch(function(error) {
+        // Handle Errors here.
+        var errorMessage = error.message;
+        alert(errorMessage);
+        // ...
+    });
+
+
+  }
+
+  loginNative(){
+    alert(this.account.email + ' ' + this.account.password);
   }
 
   loginFacebook(){
@@ -25,18 +53,20 @@ export class LoginPage{
         })
       })
     }else{
-      alert('not native so no can do sugarcube');
+
+      let provider = new firebase.auth.FacebookAuthProvider();
+
+      firebase.auth().signInWithRedirect(provider).then(()=>{
+        firebase.auth().getRedirectResult().then((result)=>{
+          alert(JSON.stringify(result));
+        }).catch(function(error){
+          alert(JSON.stringify(error))
+        });
+      })
+
     }
 
-    /*let provider = new firebase.auth.FacebookAuthProvider();
-
-    firebase.auth().signInWithRedirect(provider).then(()=>{
-      firebase.auth().getRedirectResult().then((result)=>{
-        alert(JSON.stringify(result));
-      }).catch(function(error){
-        alert(JSON.stringify(error))
-      });
-    })*/
+    /**/
 
 
   }

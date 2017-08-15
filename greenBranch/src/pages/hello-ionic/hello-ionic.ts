@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 import { KnowledgeBaseListPage } from '../knowledge-base/knowledge-base-list/knowledge-base-list';
 import { ChecklistListPage } from '../checklists/checklist-list/checklist-list';
 import { LoginPage } from '../login/login';
+import { UserProfilePage } from '../user-profile/user-profile'
 
 import {User} from '../../models/user';
 
@@ -14,7 +15,7 @@ import firebase from 'firebase';
   templateUrl: 'hello-ionic.html'
 })
 export class HelloIonicPage {
-  database = firebase.database();
+  database = firebase.database();// DB FOR TESTING
 
   constructor(public NavCtrl: NavController){
 
@@ -33,10 +34,15 @@ export class HelloIonicPage {
   }
 
   testDB(){
-    this.database.ref('users/2').remove();
-    /*let testUser: User = new User(2, 'Janos', 'Manager', 'greenbranch studios', null,
+    let testUser: User = new User(2, 'Janos', 'Manager', 'greenbranch studios', null,
                                   'email.com', 'somepassword');
-    testUser.save();*/
+    testUser.save();
+  }
+
+  testUserProfile(){
+    let testUser: User = new User(2, 'Janos', 'Manager', 'greenbranch studios', null,
+                                  'email.com', 'somepassword');
+    this.NavCtrl.push(UserProfilePage, { testUser });
   }
 }
 
