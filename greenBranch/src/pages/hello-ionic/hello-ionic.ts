@@ -42,8 +42,7 @@ export class HelloIonicPage {
   }
 
   testDB(){
-    let testUser: User = new User(2, 'Manager', 'greenbranch studios');
-    testUser.save();
+
   }
 
   testUserProfile(){

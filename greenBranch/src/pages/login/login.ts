@@ -14,53 +14,78 @@ import {User} from '../../models/user';
 export class LoginPage{
   database = firebase.database();
   account = {
-    email: 'emiller@gmail.com',
-    password: 'tits'
+    email: 'signup@gmail.com',
+    password: '123456'
   };
   user = {
-    name: '',
+    name: 'signer',
     email: 'signup@gmail.com',
-    company: '',
-    title: '',
-    password: '',
-    password_again: ''
+    company: 'smth',
+    title: 'smth else',
+    password: '123456',
+    password_again: '123456'
   };
 
   constructor(public navCtrl: NavController, private facebook: Facebook, public platform: Platform){
   }
 
   signupNative(){
-    firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password).catch(function(error) {
+    if(this.user.password != this.user.password_again){
+      alert("passwords don't match");
+      return;
+    }
+
+    var name = this.user.name;
+    var email = this.user.email;
+    var title = this.user.title;//from form
+    var company = this.user.company;
+    var uid;
+
+    firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password).then(function(user){
+        uid = user.uid;
+        var dbUserInstance = new User(uid, name, email, title, company);
+        dbUserInstance.save();
+
+        user.updateProfile({
+          displayName: name,
+          photoURL: ''
+        });
+    }).catch(function(error) {
         // Handle Errors here.
         var errorMessage = error.message;
         alert(errorMessage);
         // ...
     });
 
-    var title = this.user.title;//from form
-    var company = this.user.company;
-    var uid;
-
-    firebase.auth().onAuthStateChanged(function(user){
+    /*firebase.auth().onAuthStateChanged(function(user){
       if(user) {
         uid = user.uid;
-        var dbUserInstance = new User(uid, title, company);
+        var dbUserInstance = new User(uid, name, email, title, company);
         dbUserInstance.save();
+
+        user.updateProfile({
+          displayName: name,
+          photoURL: ''
+        });
       }
-    });
+    });*/
 
 
   }
 
   loginNative(){
-    firebase.auth().signInWithEmailAndPassword(this.account.email, this.account.password).catch(function(error){
+    firebase.auth().signInWithEmailAndPassword(this.account.email, this.account.password).then(function(user){
+      alert(user.displayName + ' has logged in');
+    }).catch(function(error){
       var errorMessage = error.message;
       alert(errorMessage);
     });
-    var user = firebase.auth().currentUser;
-    if(user != null){
-      alert(user.displayName);
-    }
+
+    /*firebase.auth().onAuthStateChanged(function(user){
+      if(user) {
+        alert(user.displayName + ' has logged in')
+      }
+    });*/
   }
 
   loginFacebook(){
