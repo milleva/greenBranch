@@ -26,7 +26,6 @@ export class User {//represents DB instance for storing title, company, checklis
   }
 
   save(){ //saves this user to database
-    alert(this.id);
     let userRef = this.database.ref().child('users');
 
     userRef.child(this.id).set({
