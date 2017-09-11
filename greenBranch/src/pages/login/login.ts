@@ -111,7 +111,9 @@ export class LoginPage{
     }
 
     /**/
+  }
 
-
+  loginLinkedin(){
+    window.open('http://localhost:8080/redirect', 'firebaseAuth', 'height=315,width=400');
   }
 }

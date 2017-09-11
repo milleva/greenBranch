@@ -1,11 +1,9 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
-
-
-
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ChecklistListPage } from '../pages/checklists/checklist-list/checklist-list';
 import { Checklist1Page } from '../pages/checklists/checklist1/checklist1';
@@ -31,6 +29,8 @@ firebase.initializeApp({
     messagingSenderId: "35879563489"
   });
 
+
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -41,6 +41,26 @@ const cloudSettings: CloudSettings = {
     'app_id': 'e3ee7ae1'
   }
 };
+
+
+//var express = require('express');
+//var app = express();
+/*app.get('/redirect', (req, res) => {
+
+  // Generate a random state verification cookie.
+  var crypto1: any = crypto;
+  const state = req.cookies.state || crypto1.randomBytes(20).toString('hex');
+  // Allow unsecure cookies on localhost.
+  const secureCookie = req.get('host').indexOf('localhost:') !== 0;
+  res.cookie('state', state.toString(), {maxAge: 3600000, secure: secureCookie, httpOnly: true});
+  const redirectUri = oauth2.authorizationCode.authorizeURL({
+    redirect_uri: `${req.protocol}://${req.get('host')}/linkedin-callback`,
+    scope: 'basic',
+    state: state
+  });
+  res.redirect(redirectUri);
+
+});*/
 
 @NgModule({
   declarations: [

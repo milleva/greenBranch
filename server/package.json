@@ -1,0 +1,24 @@
+{
+  "name": "linkedin-firebase-auth",
+  "description": "Sample for Firebase auth with Instagram",
+  "private": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": "~4.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud app deploy"
+  },
+  "license": "Apache Version 2.0",
+  "author": "Google Inc.",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "firebase-admin": "^4.0.0",
+    "moment": "^2.18.1",
+    "simple-oauth2": "^1.0.0",
+    "xtend": "^4.0.1"
+  }
+}
