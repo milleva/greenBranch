@@ -5,6 +5,7 @@ import { Facebook } from '@ionic-native/facebook';
 import { Platform } from 'ionic-angular';
 import { HelloIonicPage } from '../hello-ionic/hello-ionic';
 import {User} from '../../models/user';
+const request = require('request');
 
 @Component({
   selector: 'page-login',
@@ -75,7 +76,7 @@ export class LoginPage{
 
   loginNative(){
     firebase.auth().signInWithEmailAndPassword(this.account.email, this.account.password).then(function(user){
-      alert(user.displayName + ' has logged in');
+      alert(firebase.auth().currentUser.displayName);
     }).catch(function(error){
       var errorMessage = error.message;
       alert(errorMessage);
@@ -114,6 +115,15 @@ export class LoginPage{
   }
 
   loginLinkedin(){
-    window.open('http://localhost:8080/redirect', 'firebaseAuth', 'height=315,width=400');
+    //window.open('http://localhost:8080/redirect', 'firebaseAuth', 'height=315,width=400');
+    request.get('http://localhost:8080/getToken', function(data){
+      alert(data.header  + ' knigga');
+    });
+    firebase.auth().onAuthStateChanged(function(user){
+      if(user) {
+        alert(user.displayName + ' has logged in')
+      }
+    });
+
   }
 }

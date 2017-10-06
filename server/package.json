@@ -16,8 +16,12 @@
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
+    "firebase": "^4.3.1",
     "firebase-admin": "^4.0.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
     "moment": "^2.18.1",
+    "request": "^2.81.0",
     "simple-oauth2": "^1.0.0",
     "xtend": "^4.0.1"
   }

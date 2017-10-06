@@ -34,11 +34,17 @@ export class HelloIonicPage {
   }
 
   doLogout(){
+    var user = firebase.auth().currentUser;
+
     firebase.auth().signOut().then(function(){
-      alert('Logged out');
+      if(user){
+        alert('Logged out');
+      }else{
+        alert('No one is currently logged in');
+      }
     }, function(error){
       alert(error.message);
-    })
+    });
   }
 
   testDB(){
