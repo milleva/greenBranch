@@ -31,6 +31,10 @@ export class Checklist{
     this.textInputs.set(key, value);
   }
 
+  addRadioButtonValue(key, value){
+    this.radioGroups.set(key, value);
+  }
+
   //4 functions for adding pairs to the maps. Use them when saving checklist
 
   save(){//save this checklist to db
@@ -51,25 +55,27 @@ export class Checklist{
     let textInputKeys = Array.from(this.textInputs.keys());
     for(let key of textInputKeys){
       let path = 'textInputs/' + key;
-      alert(this.textInputs.get(key));
       checklistRef.child(path).set(
         this.textInputs.get(key)
       );
     }
 
-    /*let radioGroupKeys = Array.from(this.radioGroups.keys());
-    for(let key of checkboxKeys){
-      checklistRef.child('radioGroups').set({
+    let radioGroupKeys = Array.from(this.radioGroups.keys());
+    for(let key of radioGroupKeys){
+      let path = 'radioGroups/' + key;
+      alert(this.radioGroups.get(key));
+      checklistRef.child(path).set({
         key: this.radioGroups.get(key)
       });
     }
 
-    let numberInputKeys = Array.from(this.numberInputs.keys());
-    for(let key of checkboxKeys){
-      checklistRef.child('numberInputs').set({
-        key: this.numberInputs.get(key)
-      });
-    }*/
+    /*
+        let numberInputKeys = Array.from(this.numberInputs.keys());
+        for(let key of checkboxKeys){
+          checklistRef.child('numberInputs').set({
+            key: this.numberInputs.get(key)
+          });
+        }*/
 
 
 

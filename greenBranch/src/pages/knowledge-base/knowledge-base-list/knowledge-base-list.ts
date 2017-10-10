@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
   templateUrl: 'knowledge-base-list.html'
 })
 export class KnowledgeBaseListPage {
-	url: string = 'http://krazybusiness.com/wp-json/wp/v2/posts';
+	url: string = 'http://test.greenbranch.studio/wp-json/wp/v2/posts';
 	items: any;
 
 	constructor( public navCtrl: NavController, private http: Http, private nav: NavController ) {}

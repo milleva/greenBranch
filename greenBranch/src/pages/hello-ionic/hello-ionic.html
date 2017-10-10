@@ -23,20 +23,18 @@
   <p>
     <button ion-button color="primary" (click)="doLogout()">Logout</button>
   </p>
+
   <p>
-    <button ion-button color="primary" (click)="toKnowledgeBase()">Knowledge base</button>
+    <button ion-button class="topbar" color="primary" (click)="userProfile()">Profile</button>
   </p>
   <p>
-    <button ion-button color="primary" (click)="toChecklists()">Checklists</button>
+    <button ion-button class="bottombar" id="kbButton" color="primary" (click)="toKnowledgeBase()">Knowledge base</button>
   </p>
   <p>
-    <button ion-button color="primary">Calculator</button>
+    <button ion-button class="bottombar"  id="checklistButton" color="primary" (click)="toChecklists()">Checklists</button>
   </p>
   <p>
-    <button ion-button color="primary" (click)="testDB()">test database</button>
-  </p>
-  <p>
-    <button ion-button color="primary" (click)="testUserProfile()">test user profile</button>
+    <button ion-button class="bottombar" color="primary">Calculator</button>
   </p>
 
 </ion-content>

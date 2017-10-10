@@ -85,6 +85,10 @@ export class MediaBuyingChecklistPage {
     for(var textInput in this.textInputs){
       dbChecklistInstance.addTextInput(textInput, this.textInputs[textInput]);
     }
+
+    for(var radioButton in this.radioGroups){
+      dbChecklistInstance.addRadioButtonValue(radioButton, this.radioGroups[radioButton]);
+    }
     dbChecklistInstance.save();
 
   }

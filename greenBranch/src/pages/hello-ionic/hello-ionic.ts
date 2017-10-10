@@ -47,11 +47,7 @@ export class HelloIonicPage {
     });
   }
 
-  testDB(){
-
-  }
-
-  testUserProfile(){
+  userProfile(){
     /*let testUser: User = new User(2, 'Janos', 'Manager', 'greenbranch studios', null,
                                   'email.com', 'somepassword');
     this.NavCtrl.push(UserProfilePage, { testUser });*/
