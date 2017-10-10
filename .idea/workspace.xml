@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f9901e5c-9770-4dd7-9931-0d8b77e458db" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/config.xml" afterPath="$PROJECT_DIR$/greenBranch/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/package-lock.json" afterPath="$PROJECT_DIR$/greenBranch/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/package.json" afterPath="$PROJECT_DIR$/greenBranch/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/src/models/checklist.ts" afterPath="$PROJECT_DIR$/greenBranch/src/models/checklist.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/src/pages/checklists/mediaBuying/mediaBuying.html" afterPath="$PROJECT_DIR$/greenBranch/src/pages/checklists/mediaBuying/mediaBuying.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/src/pages/checklists/mediaBuying/mediaBuying.ts" afterPath="$PROJECT_DIR$/greenBranch/src/pages/checklists/mediaBuying/mediaBuying.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.html" afterPath="$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.scss" afterPath="$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.ts" afterPath="$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/src/pages/knowledge-base/knowledge-base-list/knowledge-base-list.ts" afterPath="$PROJECT_DIR$/greenBranch/src/pages/knowledge-base/knowledge-base-list/knowledge-base-list.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greenBranch/src/pages/user-profile/user-profile.scss" afterPath="$PROJECT_DIR$/greenBranch/src/pages/user-profile/user-profile.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello-ionic.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hello-ionic.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="396">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -111,7 +104,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-profile.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user-profile.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/user-profile/user-profile.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -319,12 +312,12 @@
       <workItem from="1506859581747" duration="1083000" />
       <workItem from="1507254197756" duration="14648000" />
       <workItem from="1507572701048" duration="952000" />
-      <workItem from="1507579410465" duration="8173000" />
+      <workItem from="1507579410465" duration="8572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43573000" />
+    <option name="totallyTimeSpent" value="43972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="-4" width="1857" height="1092" extended-state="6" />
@@ -715,6 +708,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/user-profile/user-profile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greenBranch/src/models/checklist.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/milleva.github.io/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/knowledge-base/knowledge-base-list/knowledge-base-list.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/checklists/mediaBuying/mediaBuying.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -734,29 +775,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/user-profile/user-profile.ts">
+    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="641">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/user-profile/user-profile.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greenBranch/src/models/checklist.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,45 +793,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/knowledge-base/knowledge-base-list/knowledge-base-list.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/milleva.github.io/index.html">
+    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/user-profile/user-profile.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greenBranch/src/pages/hello-ionic/hello-ionic.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
